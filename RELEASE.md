@@ -11,7 +11,7 @@ tree-sitter version X.Y.Z
 cargo update -p tree-sitter-witcherscript --offline
 ```
 
-This bumps the version in these files; commit no other changes:
+Bump the version in all six manifest files and `Cargo.lock` - no other changes:
 
 | File | Field |
 |------|-------|
