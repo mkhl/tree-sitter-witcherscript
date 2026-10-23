@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-witcherscript",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "description": "WitcherScript grammar for tree-sitter",
   "keywords": [
     "incremental",
