@@ -522,6 +522,7 @@ module.exports = grammar({
       optional(seq(
         '<',
         field('type_arg', $.type_annot),
+        optional(seq(',', field('type_arg', $.type_annot))),
         '>'
       ))
     ),

@@ -4521,7 +4521,7 @@
     "named": true,
     "fields": {
       "type_arg": {
-        "multiple": false,
+        "multiple": true,
         "required": false,
         "types": [
           {

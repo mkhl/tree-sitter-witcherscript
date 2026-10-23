@@ -97,3 +97,30 @@ function test() {
             member: (ident))
           args: (func_call_args
             (ident)))))))
+
+
+===================================================================================================
+Type annotation - more than two type arguments
+===================================================================================================
+
+function test() {
+    var bad : map<int, string, float>;
+}
+
+---------------------------------------------------------------------------------------------------
+
+(script
+  (func_decl
+    name: (ident)
+    params: (func_params)
+    definition: (func_block
+      (local_var_decl_stmt
+        names: (ident)
+        var_type: (type_annot
+          type_name: (ident)
+          type_arg: (type_annot
+            type_name: (ident))
+          type_arg: (type_annot
+            type_name: (ident))
+          (ERROR
+            (ident)))))))

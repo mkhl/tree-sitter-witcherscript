@@ -91,6 +91,47 @@ function test() {
 
 
 
+===================================================================================================
+Local var declarations - map
+===================================================================================================
+
+function test() {
+    var counts : map<name, int>;
+    var nested : map<int, array<map<name, string>>>;
+}
+
+---------------------------------------------------------------------------------------------------
+
+(script
+  (func_decl
+    name: (ident)
+    params: (func_params)
+    definition: (func_block
+      (local_var_decl_stmt
+        names: (ident)
+        var_type: (type_annot
+          type_name: (ident)
+          type_arg: (type_annot
+            type_name: (ident))
+          type_arg: (type_annot
+            type_name: (ident))))
+      (local_var_decl_stmt
+        names: (ident)
+        var_type: (type_annot
+          type_name: (ident)
+          type_arg: (type_annot
+            type_name: (ident))
+          type_arg: (type_annot
+            type_name: (ident)
+            type_arg: (type_annot
+              type_name: (ident)
+              type_arg: (type_annot
+                type_name: (ident))
+              type_arg: (type_annot
+                type_name: (ident)))))))))
+
+
+
 
 ===================================================================================================
 Conditionals - if
